@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 export default function FooterLinks() {
@@ -25,6 +26,8 @@ export default function FooterLinks() {
   );
 }
 =======
+=======
+>>>>>>> 23ed9b7 (footer)
 import React from "react";
 
 const FooterLinks: React.FC = () => {
@@ -45,4 +48,7 @@ const FooterLinks: React.FC = () => {
 };
 
 export default FooterLinks;
+<<<<<<< HEAD
 >>>>>>> 211c9df (footer)
+=======
+>>>>>>> 23ed9b7 (footer)
