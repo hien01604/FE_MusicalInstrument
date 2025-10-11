@@ -22,6 +22,7 @@ const NavLinks: React.FC = () => {
       >
         Accessories
       </NavLink>
+<<<<<<< HEAD
 
       {/* 🆕 Product link */}
       <NavLink
@@ -34,6 +35,8 @@ const NavLinks: React.FC = () => {
       >
         Product
       </NavLink>
+=======
+>>>>>>> 566624e (header)
     </nav>
   );
 };
