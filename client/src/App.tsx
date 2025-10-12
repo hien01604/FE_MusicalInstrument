@@ -4,6 +4,7 @@ import LoginPage from './page/client/LoginPage';
 import SignupPage from './page/client/SignupPage';
 import HomePage from './page/client/Homepage';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import AboutUsPage from './page/client/AboutUsPage';
 import ProductPage from './page/client/ProductPage';
 import ProductDetailPage from './page/client/ProductDetailPage';
@@ -41,6 +42,9 @@ import ScrollToTop from './component/ScrollToTop';
 =======
 
 >>>>>>> 9e2a5de (ProductPage)
+=======
+import AboutUsPage from "./page/client/AboutUsPage";
+>>>>>>> c76c4e6 (AboutusPage)
 
 function App() {
   return (
@@ -73,6 +77,7 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />      
+<<<<<<< HEAD
         <Route path="/product" element={<ProductPage />} />
 <<<<<<< HEAD
         <Route path="/product/:id" element={<ProductDetailPage />} />
@@ -93,6 +98,8 @@ function App() {
 =======
 >>>>>>> 9e2a5de (ProductPage)
 
+=======
+>>>>>>> c76c4e6 (AboutusPage)
       </Routes>
 >>>>>>> 4359f10 (ContactUsPage)
     </BrowserRouter>
