@@ -31,12 +31,16 @@ import DeliverInfoPage from './page/client/DeliveryInfoPage';
 =======
 import AboutUsPage from "./page/client/AboutUsPage";
 import ProductPage from "./page/client/ProductPage";
+<<<<<<< HEAD
 import ProductDetailPage from "./page/client/ProductDetailPage";
 <<<<<<< HEAD
 import ScrollToTop from './component/ScrollToTop';
 >>>>>>> 7016103 (update ProductDetailPage layout)
 =======
 >>>>>>> 970108f (ProductDetailPage)
+=======
+
+>>>>>>> 9e2a5de (ProductPage)
 
 function App() {
   return (
@@ -70,6 +74,7 @@ function App() {
         <Route path='/signup' element={<SignupPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />      
         <Route path="/product" element={<ProductPage />} />
+<<<<<<< HEAD
         <Route path="/product/:id" element={<ProductDetailPage />} />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,6 +90,8 @@ function App() {
 >>>>>>> 9d115b3 (DeliveryInfoPage)
 =======
 >>>>>>> 970108f (ProductDetailPage)
+=======
+>>>>>>> 9e2a5de (ProductPage)
 
       </Routes>
 >>>>>>> 4359f10 (ContactUsPage)

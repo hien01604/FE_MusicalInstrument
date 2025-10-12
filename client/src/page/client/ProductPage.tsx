@@ -1,5 +1,8 @@
 import Header from "../../component/Header/Header";
+<<<<<<< HEAD
 import Breadcrumb from "../../component/Breadcrumb";
+=======
+>>>>>>> 9e2a5de (ProductPage)
 import Footer from "../../component/Footer/Footer";
 import ProductCard from "../../component/ProductCard";
 import ProductFilterSidebar from "../../component/ProductFilter/ProductFilterSidebar";
@@ -34,7 +37,10 @@ export default function ProductPage() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
       <Header />
+<<<<<<< HEAD
       <Breadcrumb /> 
+=======
+>>>>>>> 9e2a5de (ProductPage)
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-20 py-10">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
