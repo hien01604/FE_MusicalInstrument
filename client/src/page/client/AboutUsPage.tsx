@@ -12,9 +12,15 @@ export default function AboutUsPage() {
       <Breadcrumb />
 
       {/* 🌿 Content */}
+<<<<<<< HEAD
       <Layout>
         {/* Title */}
         <h1 className="text-3xl font-bold text-gray-800">About Solar Strings</h1>
+=======
+      <main className="flex-1">
+        <div className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-20 py-6 space-y-8">
+        
+>>>>>>> f0ba3c7 (Breadcrumb)
 
         {/* --- Main Content --- */}
         <div className="grid md:grid-cols-2 gap-8 items-start">
