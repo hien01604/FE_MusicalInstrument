@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../../component/Header/Header";
 import Footer from "../../component/Footer/Footer";
 import Breadcrumb from "../../component/Breadcrumb";
+<<<<<<< HEAD
 import ProductDetailLayout from "../../component/ProductDetail/ProductDetailLayout";
 import productData from "../../sample/sample";
 import ProductLayout from "../../component/BestSellingProduct/ProductLayout";
@@ -11,6 +12,10 @@ import Layout from "../../component/Layout";
 
 =======
 >>>>>>> 7016103 (update ProductDetailPage layout)
+=======
+import ProductDetailMain from "../../component/ProductDetail/ProductDetailLayout";
+import productData from "../../sample/sample";
+>>>>>>> 970108f (ProductDetailPage)
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -21,7 +26,11 @@ const ProductDetailPage: React.FC = () => {
       <>
         <Header />
         <div className="text-center py-20 text-gray-600">
+<<<<<<< HEAD
           Product not found 😢
+=======
+          Product not found.
+>>>>>>> 970108f (ProductDetailPage)
         </div>
         <Footer />
       </>
@@ -30,6 +39,7 @@ const ProductDetailPage: React.FC = () => {
 
   return (
     <>
+<<<<<<< HEAD
 <<<<<<< HEAD
       {/* 🧭 Header */}
       <Header />
@@ -65,6 +75,12 @@ const ProductDetailPage: React.FC = () => {
 
       {/* Footer */}
 >>>>>>> 7016103 (update ProductDetailPage layout)
+=======
+      <Header />
+      <Breadcrumb />
+      <ProductDetailMain product={product} />
+      
+>>>>>>> 970108f (ProductDetailPage)
       <Footer />
     </>
   );

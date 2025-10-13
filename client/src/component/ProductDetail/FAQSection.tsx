@@ -40,6 +40,7 @@ const faqs = [
 ];
 
 const FAQSection: React.FC = () => {
+<<<<<<< HEAD
   const [openIndices, setOpenIndices] = useState<Set<number>>(new Set());
 
   const toggleFAQ = (index: number) => {
@@ -53,6 +54,9 @@ const FAQSection: React.FC = () => {
       return newOpenIndices;
     });
   };
+=======
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+>>>>>>> 970108f (ProductDetailPage)
 
   return (
     <section className="max-w-6xl mx-auto mt-12">
@@ -63,12 +67,20 @@ const FAQSection: React.FC = () => {
             className="bg-[#F7F6F3] border border-gray-200 rounded-sm overflow-hidden"
           >
             <button
+<<<<<<< HEAD
               onClick={() => toggleFAQ(index)}
+=======
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+>>>>>>> 970108f (ProductDetailPage)
               className="w-full flex justify-between items-center px-5 py-4 text-left"
             >
               <span
                 className={`font-semibold text-[15px] ${
+<<<<<<< HEAD
                   openIndices.has(index) ? "text-black" : "text-gray-800"
+=======
+                  openIndex === index ? "text-black" : "text-gray-800"
+>>>>>>> 970108f (ProductDetailPage)
                 }`}
               >
                 {item.q}
@@ -76,7 +88,11 @@ const FAQSection: React.FC = () => {
               <ChevronDown
                 size={20}
                 className={`text-gray-600 transition-transform ${
+<<<<<<< HEAD
                   openIndices.has(index) ? "rotate-180" : ""
+=======
+                  openIndex === index ? "rotate-180" : ""
+>>>>>>> 970108f (ProductDetailPage)
                 }`}
               />
             </button>
@@ -84,7 +100,11 @@ const FAQSection: React.FC = () => {
             {/* Nội dung mở */}
             <div
               className={`overflow-hidden transition-all duration-300 ${
+<<<<<<< HEAD
                 openIndices.has(index) ? "max-h-96 py-2 px-5" : "max-h-0"
+=======
+                openIndex === index ? "max-h-96 py-2 px-5" : "max-h-0"
+>>>>>>> 970108f (ProductDetailPage)
               }`}
             >
               <div className="text-gray-700 text-sm leading-relaxed">

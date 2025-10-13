@@ -32,8 +32,11 @@ import DeliverInfoPage from './page/client/DeliveryInfoPage';
 import AboutUsPage from "./page/client/AboutUsPage";
 import ProductPage from "./page/client/ProductPage";
 import ProductDetailPage from "./page/client/ProductDetailPage";
+<<<<<<< HEAD
 import ScrollToTop from './component/ScrollToTop';
 >>>>>>> 7016103 (update ProductDetailPage layout)
+=======
+>>>>>>> 970108f (ProductDetailPage)
 
 function App() {
   return (
@@ -69,6 +72,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetailPage />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/delivery-information" element={<DeliverInfoPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
@@ -79,6 +83,8 @@ function App() {
 =======
         <Route path="/delivery" element={<DeliverInfoPage />} />
 >>>>>>> 9d115b3 (DeliveryInfoPage)
+=======
+>>>>>>> 970108f (ProductDetailPage)
 
       </Routes>
 >>>>>>> 4359f10 (ContactUsPage)

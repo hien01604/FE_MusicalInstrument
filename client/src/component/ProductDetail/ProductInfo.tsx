@@ -1,5 +1,6 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import ProductGallery from "./ProductGallery";
 import ProductTabs from "./ProductSpec";
 import FAQSection from "./FAQSection";
@@ -12,12 +13,16 @@ import { useCart } from "../../context/CartContext";
 =======
 import { ShoppingCart, Heart } from "lucide-react";
 >>>>>>> 7016103 (update ProductDetailPage layout)
+=======
+import { Heart } from "lucide-react";
+>>>>>>> 970108f (ProductDetailPage)
 import type { SimpleProduct } from "../../sample/sample";
 
 interface Props {
   product: SimpleProduct;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 const ProductDetailMain: React.FC<Props> = ({ product }) => {
   const { addToCart } = useCart(); // ✅ lấy context
@@ -175,3 +180,26 @@ const ProductInfo: React.FC<Props> = ({ product }) => {
 };
 
 export default ProductDetailMain;
+=======
+const ProductInfo: React.FC<Props> = ({ product }) => {
+  return (
+    <div className="flex flex-col gap-4">
+      <h1 className="text-xl md:text-2xl font-semibold leading-snug">
+        {product.name}
+      </h1>
+
+      <p className="text-3xl font-bold text-gray-900">{product.price}</p>
+
+      <button className="bg-black text-white py-2 px-4 rounded-lg w-fit font-medium hover:bg-gray-800">
+        Contact Us
+      </button>
+
+      <button className="flex items-center gap-2 text-gray-600 hover:text-black mt-1">
+        <Heart size={18} /> Add to Wishlist
+      </button>
+    </div>
+  );
+};
+
+export default ProductInfo;
+>>>>>>> 970108f (ProductDetailPage)
