@@ -8,7 +8,11 @@ export default function FooterLinks() {
       <Link to="/delivery-information" className="hover:text-yellow-600 transition">Delivery Information</Link>
       <Link to="/privacy-policy" className="hover:text-yellow-600 transition">Privacy Policy</Link>
       <Link to="/terms-and-conditions" className="hover:text-yellow-600 transition">Terms & Conditions</Link>
+<<<<<<< HEAD
       <Link to="/contact-us" className="hover:text-yellow-600 transition">Contact Us</Link>
+=======
+      <Link to="/contact" className="hover:text-yellow-600 transition">Contact Us</Link>
+>>>>>>> 95d1a6d (update breadcrumb -  policy - terms)
     </div>
   );
 }

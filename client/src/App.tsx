@@ -13,10 +13,16 @@ import TermsConditionsPage from './page/client/TermsConditionsPage';
 import ContactUsPage from './page/client/ContactUsPage';
 import CartPage from './page/client/CartPage';
 import ScrollToTop from './component/ScrollToTop';
+<<<<<<< HEAD
 import { CartProvider } from './context/CartContext';
 =======
 import ContactusPage from './page/client/ContactusPage';
 >>>>>>> 4359f10 (ContactUsPage)
+=======
+import DeliverInfoPage from './page/client/DeliveryInfoPage';
+import PrivacyPolicyPage from './page/client/PrivacyPolicyPage';
+import TermsConditionsPage from './page/client/TermsConditionsPage';
+>>>>>>> 95d1a6d (update breadcrumb -  policy - terms)
 
 function App() {
   return (
@@ -51,7 +57,10 @@ function App() {
         <Route path="/delivery-information" element={<DeliverInfoPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
+<<<<<<< HEAD
         <Route path="/contact-us" element={<ContactusPage />} />
+=======
+>>>>>>> 95d1a6d (update breadcrumb -  policy - terms)
 
       </Routes>
 >>>>>>> 4359f10 (ContactUsPage)
