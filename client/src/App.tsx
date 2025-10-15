@@ -9,15 +9,20 @@ import ProductDetailPage from './page/client/ProductDetailPage';
 import DeliveryInfoPage from './page/client/DeliveryInfoPage';
 import PrivacyPolicyPage from './page/client/PrivacyPolicyPage';
 import TermsConditionsPage from './page/client/TermsConditionsPage';
+<<<<<<< HEAD
 import ContactUsPage from './page/client/ContactUsPage';
 import CartPage from './page/client/CartPage';
 import ScrollToTop from './component/ScrollToTop';
 import { CartProvider } from './context/CartContext';
+=======
+import ContactusPage from './page/client/ContactusPage';
+>>>>>>> 4359f10 (ContactUsPage)
 
 function App() {
   return (
 <<<<<<< HEAD
     <BrowserRouter>
+<<<<<<< HEAD
       <CartProvider>
         <ScrollToTop />
         <Routes>
@@ -34,6 +39,22 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </CartProvider>
+=======
+    <ScrollToTop />
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/signup' element={<SignupPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />      
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/product/:id" element={<ProductDetailPage />} />
+        <Route path="/delivery-information" element={<DeliverInfoPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
+        <Route path="/contact-us" element={<ContactusPage />} />
+
+      </Routes>
+>>>>>>> 4359f10 (ContactUsPage)
     </BrowserRouter>
 =======
     <CartProvider>
