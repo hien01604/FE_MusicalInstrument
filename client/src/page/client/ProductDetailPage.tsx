@@ -7,7 +7,10 @@ import ProductDetailLayout from "../../component/ProductDetail/ProductDetailLayo
 import productData from "../../sample/sample";
 import ProductLayout from "../../component/BestSellingProduct/ProductLayout";
 import Layout from "../../component/Layout";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7016103 (update ProductDetailPage layout)
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -27,6 +30,7 @@ const ProductDetailPage: React.FC = () => {
 
   return (
     <>
+<<<<<<< HEAD
       {/* 🧭 Header */}
       <Header />
 
@@ -43,6 +47,24 @@ const ProductDetailPage: React.FC = () => {
       </Layout>
 
       {/* 🦶 Footer */}
+=======
+      {/* Header */}
+      <Header />
+
+      {/* Breadcrumb */}
+        <Breadcrumb />
+
+      {/* Main Content (Layout Wrapper) */}
+      <Layout>
+        {/* Product Detail */}
+        <ProductDetailLayout product={product} />
+
+        {/* Best Selling / Related Products */}
+          <ProductLayout />
+      </Layout>
+
+      {/* Footer */}
+>>>>>>> 7016103 (update ProductDetailPage layout)
       <Footer />
     </>
   );

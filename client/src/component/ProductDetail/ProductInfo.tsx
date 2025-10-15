@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import ProductGallery from "./ProductGallery";
 import ProductTabs from "./ProductSpec";
 import FAQSection from "./FAQSection";
@@ -8,6 +9,9 @@ import { useCart } from "../../context/CartContext";
 =======
 import { useCart } from "../../context/CartContext"; 
 >>>>>>> 180bcab (ProductCartPage)
+=======
+import { ShoppingCart, Heart } from "lucide-react";
+>>>>>>> 7016103 (update ProductDetailPage layout)
 import type { SimpleProduct } from "../../sample/sample";
 
 interface Props {
@@ -41,6 +45,7 @@ const ProductInfo: React.FC<Props> = ({ product }) => {
       : product.price;
 
   return (
+<<<<<<< HEAD
     <section className="w-full py-8">
       {/* Grid: Gallery + Info */}
       <div className="grid grid-cols-1 md:grid-cols-[1fr_0.9fr] gap-10 items-start">
@@ -126,10 +131,34 @@ const ProductInfo: React.FC<Props> = ({ product }) => {
 
 
         {/* ❤️ Wishlist */}
+=======
+    <div className="flex flex-col gap-4">
+      {/* Product Title */}
+      <h1 className="text-2xl font-semibold leading-snug text-gray-900">
+        {product.name}
+      </h1>
+
+      {/* Price */}
+      <p className="text-3xl font-bold text-gray-900">{product.price}</p>
+
+      {/* Availability */}
+      <p className="text-sm text-gray-500">
+        {product.status === "Có hàng" ? "Còn hàng" : "Hết hàng"}
+      </p>
+
+      {/* Buttons */}
+      <div className="flex items-center gap-3 mt-3">
+        <button className="flex items-center gap-2 bg-black text-white py-2 px-5 rounded-lg hover:bg-gray-800 transition">
+          <ShoppingCart size={18} />
+          Add to Cart
+        </button>
+
+>>>>>>> 7016103 (update ProductDetailPage layout)
         <button className="flex items-center gap-2 border border-gray-300 py-2 px-5 rounded-lg hover:bg-gray-100 transition">
           <Heart size={18} />
           Wishlist
         </button>
+<<<<<<< HEAD
 >>>>>>> 180bcab (ProductCartPage)
       </div>
 
@@ -138,6 +167,10 @@ const ProductInfo: React.FC<Props> = ({ product }) => {
         <FAQSection />
       </div>
     </section>
+=======
+      </div>
+    </div>
+>>>>>>> 7016103 (update ProductDetailPage layout)
   );
 };
 

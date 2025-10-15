@@ -6,7 +6,11 @@ interface Props {
 }
 
 const ProductSpec: React.FC<Props> = ({ description }) => {
+<<<<<<< HEAD
   const [openTabs, setOpenTabs] = useState<Set<number>>(new Set());
+=======
+  const [openTab, setOpenTab] = useState<number | null>(0);
+>>>>>>> 7016103 (update ProductDetailPage layout)
 
   const tabs = [
     {

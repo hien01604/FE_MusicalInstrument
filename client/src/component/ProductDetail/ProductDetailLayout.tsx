@@ -42,6 +42,7 @@ const ProductDetailMain: React.FC<Props> = ({ product }) => {
 
             {/* Buttons */}
             <div className="flex items-center gap-3 mt-3">
+<<<<<<< HEAD
               {/* 🛒 Add to Cart */}
               <button
                 onClick={() => {
@@ -66,6 +67,13 @@ const ProductDetailMain: React.FC<Props> = ({ product }) => {
               </button>
 
               {/* ❤️ Wishlist */}
+=======
+              <button className="flex items-center gap-2 bg-black text-white py-2 px-5 rounded-lg hover:bg-gray-800 transition">
+                <ShoppingCart size={18} />
+                Add to cart
+              </button>
+
+>>>>>>> 7016103 (update ProductDetailPage layout)
               <button className="flex items-center gap-2 border border-gray-300 py-2 px-5 rounded-lg hover:bg-gray-100 transition">
                 <Heart size={18} />
                 Wishlist

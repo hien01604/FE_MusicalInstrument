@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginPage from './page/client/LoginPage';
 import SignupPage from './page/client/SignupPage';
 import HomePage from './page/client/Homepage';
+<<<<<<< HEAD
 import AboutUsPage from './page/client/AboutUsPage';
 import ProductPage from './page/client/ProductPage';
 import ProductDetailPage from './page/client/ProductDetailPage';
@@ -27,11 +28,18 @@ import TermsConditionsPage from './page/client/TermsConditionsPage';
 =======
 import DeliverInfoPage from './page/client/DeliveryInfoPage';
 >>>>>>> 9d115b3 (DeliveryInfoPage)
+=======
+import AboutUsPage from "./page/client/AboutUsPage";
+import ProductPage from "./page/client/ProductPage";
+import ProductDetailPage from "./page/client/ProductDetailPage";
+import ScrollToTop from './component/ScrollToTop';
+>>>>>>> 7016103 (update ProductDetailPage layout)
 
 function App() {
   return (
 <<<<<<< HEAD
     <BrowserRouter>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <CartProvider>
         <ScrollToTop />
@@ -50,6 +58,8 @@ function App() {
         </Routes>
       </CartProvider>
 =======
+=======
+>>>>>>> 7016103 (update ProductDetailPage layout)
     <ScrollToTop />
       <Routes>
         <Route path='/' element={<HomePage />}/>
