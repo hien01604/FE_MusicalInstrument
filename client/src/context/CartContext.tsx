@@ -3,7 +3,11 @@ import React, { createContext, useContext, useState, type ReactNode } from "reac
 export interface CartItem {
   id: number;
   name: string;
+<<<<<<< HEAD
   price: string;
+=======
+  price: number;
+>>>>>>> 180bcab (ProductCartPage)
   image: string;
   quantity: number;
 }
@@ -28,7 +32,10 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [cart, setCart] = useState<CartItem[]>([]);
 
   const addToCart = (item: CartItem) => {
+<<<<<<< HEAD
     console.log("🛒 Add to cart called with:", item);
+=======
+>>>>>>> 180bcab (ProductCartPage)
     setCart((prev) => {
       const existing = prev.find((p) => p.id === item.id);
       if (existing) {

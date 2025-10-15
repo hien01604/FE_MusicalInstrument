@@ -1,12 +1,16 @@
 import React from "react";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react"; // 🟡 Icon mũi tên
+=======
+>>>>>>> 180bcab (ProductCartPage)
 
 interface Props {
   total: number;
   onClear: () => void;
 }
 
+<<<<<<< HEAD
 const CartSummary: React.FC<Props> = ({ total, onClear }) => {
   const navigate = useNavigate();
 
@@ -78,5 +82,20 @@ const CartSummary: React.FC<Props> = ({ total, onClear }) => {
     </div>
   );
 };
+=======
+const CartSummary: React.FC<Props> = ({ total, onClear }) => (
+  <div className="flex justify-between items-center mt-6">
+    <button
+      onClick={onClear}
+      className="px-4 py-2 border border-gray-400 rounded-lg hover:bg-gray-100"
+    >
+      Clear Cart
+    </button>
+    <div className="text-xl font-semibold">
+      Total: <span className="text-[#A97132]">${total.toFixed(2)}</span>
+    </div>
+  </div>
+);
+>>>>>>> 180bcab (ProductCartPage)
 
 export default CartSummary;

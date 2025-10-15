@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import Header from "../../component/Header/Header";
 import Footer from "../../component/Footer/Footer";
 import Breadcrumb from "../../component/Breadcrumb";
@@ -36,6 +37,32 @@ const CartPage: React.FC = () => {
       {/* Layout nội dung chính */}
       <Layout>
         <h1 className="text-3xl font-bold bg-gradient-to-r from-[#A67C00] to-[#D4AF37] text-transparent bg-clip-text">
+=======
+import { useCart } from "../../context/CartContext";
+import Layout from "../../component/Layout";
+import Breadcrumb from "../../component/Breadcrumb";
+import CartTable from "../../component/Cart/CartTable";
+import CartSummary from "../../component/Cart/CartSummary";
+import Header from "../../component/Header/Header";
+import Footer from "../../component/Footer/Footer";
+
+const CartPage: React.FC = () => {
+  const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  return (
+    <>
+      {/*  Header */}
+      <Header />
+
+      {/* Breadcrumb */}
+      <Breadcrumb />
+
+      {/* 📦 Layout nội dung chính */}
+      <Layout>
+        <div className="max-w-6xl mx-auto px-4 py-1">
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-[#A67C00] to-[#D4AF37] text-transparent bg-clip-text mb-6">
+>>>>>>> 180bcab (ProductCartPage)
             Your Shopping Cart
           </h1>
           {cart.length === 0 ? (
@@ -61,10 +88,17 @@ const CartPage: React.FC = () => {
               <CartSummary total={total} onClear={clearCart} />
             </>
           )}
+<<<<<<< HEAD
 >>>>>>> c15e393 (update CartPage.tsx layout)
       </Layout>
 
 >>>>>>> e158872 (update Cart)
+=======
+        </div>
+      </Layout>
+
+      {/* Footer */}
+>>>>>>> 180bcab (ProductCartPage)
       <Footer />
     </>
   );

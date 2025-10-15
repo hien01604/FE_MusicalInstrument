@@ -16,6 +16,7 @@ import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
+<<<<<<< HEAD
     <BrowserRouter>
       <CartProvider>
         <ScrollToTop />
@@ -34,6 +35,26 @@ function App() {
         </Routes>
       </CartProvider>
     </BrowserRouter>
+=======
+    <CartProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/product" element={<ProductPage />} />
+            <Route path="/product/:id" element={<ProductDetailPage />} />
+            <Route path="/delivery-information" element={<DeliveryInfoPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
+            <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route path="/cart" element={<CartPage />} /> 
+          </Routes>
+      </BrowserRouter>
+    </CartProvider>
+>>>>>>> 180bcab (ProductCartPage)
   );
 }
 
