@@ -17,6 +17,7 @@ const CartPage: React.FC = () => {
 
       <Breadcrumb />
 
+<<<<<<< HEAD
       <Layout>
       <h1 className="text-3xl font-bold bg-gradient-to-r from-[#A67C00] to-[#D4AF37] text-transparent bg-clip-text">
             Your Shopping Cart
@@ -31,6 +32,36 @@ const CartPage: React.FC = () => {
 =======
 
         <CartContent />
+=======
+      {/* Layout nội dung chính */}
+      <Layout>
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-[#A67C00] to-[#D4AF37] text-transparent bg-clip-text">
+            Your Shopping Cart
+          </h1>
+          {cart.length === 0 ? (
+            <p className="text-gray-500 text-center">Your cart is empty</p>
+          ) : (
+            <>
+              <CartTable
+                items={cart}
+                onIncrease={(id) =>
+                  updateQuantity(
+                    id,
+                    cart.find((i) => i.id === id)!.quantity + 1
+                  )
+                }
+                onDecrease={(id) =>
+                  updateQuantity(
+                    id,
+                    cart.find((i) => i.id === id)!.quantity - 1
+                  )
+                }
+                onRemove={removeFromCart}
+              />
+              <CartSummary total={total} onClear={clearCart} />
+            </>
+          )}
+>>>>>>> c15e393 (update CartPage.tsx layout)
       </Layout>
 
 >>>>>>> e158872 (update Cart)
