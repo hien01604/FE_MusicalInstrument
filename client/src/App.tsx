@@ -14,6 +14,7 @@ import ContactUsPage from './page/client/ContactUsPage';
 import CartPage from './page/client/CartPage';
 import ScrollToTop from './component/ScrollToTop';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CartProvider } from './context/CartContext';
 =======
 import ContactusPage from './page/client/ContactusPage';
@@ -23,6 +24,9 @@ import DeliverInfoPage from './page/client/DeliveryInfoPage';
 import PrivacyPolicyPage from './page/client/PrivacyPolicyPage';
 import TermsConditionsPage from './page/client/TermsConditionsPage';
 >>>>>>> 95d1a6d (update breadcrumb -  policy - terms)
+=======
+import DeliverInfoPage from './page/client/DeliveryInfoPage';
+>>>>>>> 9d115b3 (DeliveryInfoPage)
 
 function App() {
   return (
@@ -54,6 +58,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />      
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetailPage />} />
+<<<<<<< HEAD
         <Route path="/delivery-information" element={<DeliverInfoPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
@@ -61,6 +66,9 @@ function App() {
         <Route path="/contact-us" element={<ContactusPage />} />
 =======
 >>>>>>> 95d1a6d (update breadcrumb -  policy - terms)
+=======
+        <Route path="/delivery" element={<DeliverInfoPage />} />
+>>>>>>> 9d115b3 (DeliveryInfoPage)
 
       </Routes>
 >>>>>>> 4359f10 (ContactUsPage)
