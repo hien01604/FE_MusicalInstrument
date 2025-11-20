@@ -15,7 +15,10 @@ import ScrollToTop from './component/ScrollToTop';
 import { CartProvider } from './context/CartContext';
 import ForgotPasswordPage from './page/client/ForgotPasswordPage';
 import ResetPasswordPage from './page/client/ResetPasswordPage';
+<<<<<<< HEAD
 import CheckoutPage from './page/client/CheckoutPage';
+=======
+>>>>>>> db857ec (forgot pw page)
 
 function App() {
   return (
@@ -37,8 +40,11 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
+<<<<<<< HEAD
           <Route path="/checkout" element={<CheckoutPage />} />
 
+=======
+>>>>>>> db857ec (forgot pw page)
 
         </Routes>
       </CartProvider>
