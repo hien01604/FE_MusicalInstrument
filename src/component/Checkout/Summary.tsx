@@ -21,6 +21,7 @@ export default function CheckoutSummary({ cart, subTotal, deliveryCost, totalAmo
         <span>Sub-Total</span>
         <span>{formatCurrency(subTotal)}</span>
       </div>
+<<<<<<< HEAD
       
       {/* Show Delivery Charges */}
       <div className="flex justify-between text-sm text-gray-600 mb-4 border-b pb-4">
@@ -28,6 +29,12 @@ export default function CheckoutSummary({ cart, subTotal, deliveryCost, totalAmo
         <span>{deliveryCost > 0 ? formatCurrency(deliveryCost) : "0 ₫"}</span> {/* If deliveryCost is 0, show "Free" */}
       </div>
       
+=======
+      <div className="flex justify-between text-sm text-gray-600 mb-4 border-b pb-4">
+        <span>Delivery Charges</span>
+        <span>{formatCurrency(deliveryCost)}</span>
+      </div>
+>>>>>>> eae5edd (checkout page)
       <div className="flex justify-between font-bold text-gray-900 text-lg mb-6">
         <span>Total Amount</span>
         <span className="text-red-600">{formatCurrency(totalAmount)}</span>
@@ -49,7 +56,11 @@ export default function CheckoutSummary({ cart, subTotal, deliveryCost, totalAmo
                 {item.product?.product_name}
               </p>
               <div className="flex justify-between items-center mt-1">
+<<<<<<< HEAD
                 <span className="text-xs text-gray-500">Quality: {item.quantity}</span>
+=======
+                <span className="text-xs text-gray-500">Qty: {item.quantity}</span>
+>>>>>>> eae5edd (checkout page)
                 <span className="font-bold text-sm text-green-600">
                   {item.product?.price_display}
                 </span>
@@ -60,4 +71,8 @@ export default function CheckoutSummary({ cart, subTotal, deliveryCost, totalAmo
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eae5edd (checkout page)
